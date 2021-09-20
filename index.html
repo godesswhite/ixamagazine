@@ -13,7 +13,6 @@
 html{
   zoom: 150%;
 }
-
 body{
 	height: 100vh;
     display: flex;
@@ -35,12 +34,11 @@ body{
 </head>
 <body>
 <br><br>
-	<button>Bookmark</button>
 <button onclick=goPrevPage()>Go back</button>
 <div id="magazine">
 	<div style="background-image:url(pages/01.jpg);"></div>
 	<div style="background-image:url(pages/english.png);"></div>
-	<center><br><br><br><br><br><br><br><br><br><br><a href="https://class-ixa.github.io/magazine/WhatsApp%20Video%202021-09-14%20at%202.05.141%20PM.mp4" target="_blank">Video test</a></center>
+	<center><br><br><br><br><br><br><br><br><br><br><a href="https://class-ixa.github.io/magazine/WhatsApp%20Video%202021-09-14%20at%202.05.141%20PM.mp4" target="_blank">Onam Video</a></center>
 	<div style="background-image:url(pages/03.jpg);"></div>
 	<div style="background-image:url(pages/04.jpg);"></div>
 	<div style="background-image:url(pages/05.jpg);"></div>
@@ -146,14 +144,13 @@ body{
 							elevation:50,
 							when: {
 								turned: function(e, page) {
-									console.log("You are using a mobile")
-									currentLocation++
-									console.log(currentLocation)
+									
+								
 								}
 							}
 						});
 		magazine.style.zoom = "150%"
-		
+		console.log("You are using a mobile")
 	});
 	}
 	else {
@@ -165,16 +162,12 @@ body{
 							elevation:50,
 							when: {
 								turned: function(e, page) {
-									currentLocation++
-									console.log(currentLocation)
 								}
 							}
 						});
 	});	
 	magazine.style.zoom = "100%"
 	console.log("You are using a laptop")
-	currentLocation ++
-	console.log(currentLocation)
 	}
 	
 	function goNextPage() {
