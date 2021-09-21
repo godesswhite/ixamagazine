@@ -30,15 +30,26 @@ body{
 	background-color:#ccc;
 	background-size:100% 100%;
 }
+#controls {
+    position: absolute;
+    top: 560px;
+    left: 500x;
+}
+#HEADINGMAGAZINE {
+	position: absolute;
+    top: -18px;
+    left: 0x;
+}
 </style>
 </head>
 <body>
+	<h1 id="HEADINGMAGAZINE">Class IX A Magazine</h1>
 <br><br>
 <button onclick=goPrevPage()>Go back</button>
 <div id="magazine">
 	<div style="background-image:url(pages/01.jpg);"></div>
 	<div style="background-image:url(pages/english.png);"></div>
-	<center><br><br><br><br><br><br><br><br><br><br><a href="https://class-ixa.github.io/magazine/WhatsApp%20Video%202021-09-14%20at%202.05.141%20PM.mp4" target="_blank">Onam Video</a></center>
+	<center><br><br><br><br><br><br><br><br><br><br><a href="https://class-ixa.github.io/magazine/WhatsApp%20Video%202021-09-14%20at%202.05.141%20PM.mp4" target="_blank">Onam Video</a><br><br><img src="pages/onamvideo_qrcode.png" height=200px, width=200px></img></center>
 	<div style="background-image:url(pages/03.jpg);"></div>
 	<div style="background-image:url(pages/04.jpg);"></div>
 	<div style="background-image:url(pages/05.jpg);"></div>
@@ -122,12 +133,17 @@ body{
 	<div style="background-image:url(pages/06.jpg);"></div>
 </div>	
 <button onclick=goNextPage()>Go forward</button>
+<div id="controls">
+	<button onclick=convert()>Download Magazine</button>
+</div>
 <audio id="myAudio">
     <source src="page-flip-01a.mp3" type="audio/mp3">
 </audio>
 <script type="text/javascript">
 	// References to DOM Elements
-
+	function convert() {
+		alert("This feature is coming soon...")
+	}
 
 	// Business Logic
 	let currentLocation = 1;
