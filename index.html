@@ -23,7 +23,7 @@
 		<img src="pages/coverpage.gif"></img>
 		<img src="pages/credits_img/ThankYouNote1.jpg">
 		<img src="pages/credits_img/ThankYouNote2.jpg">
-		<div class="pg3"> <center>Table of Contents<br><br><a href='javascript:$("#flipbook").turn("page", "4")'>English Section</a><br><br><a href='javascript:$("#flipbook").turn("page", "8")'>Languages Section</a><br><br><a href="">Arts & Crafts Section</a><br><br><a href="">Talents Section</a><br><br><a href="">Photography Section</a><br><br><a href="">Science & Technology Section</a><br><br><a href="">Friendship Section</a><br><br></br></center></div>
+		<div class="pg3"> <center>Table of Contents<br><br><a href='javascript:$("#flipbook").turn("page", "4")'>English Section</a><br><br><a href='javascript:$("#flipbook").turn("page", "8")'>Languages Section</a><br><br><a href='javascript:$("#flipbook").turn("page", "12")'>Arts & Crafts Section</a><br><br><a href='javascript:$("#flipbook").turn("page", "16")'>Talents Section</a><br><br><a href='javascript:$("#flipbook").turn("page", "20")'>Photography Section</a><br><br><a href='javascript:$("#flipbook").turn("page", "24")'>Science & Technology Section</a><br><br><a href='javascript:$("#flipbook").turn("page", "28")'>Friendship Section</a><br><br></br></center></div>
 		<div class="pg3">English Section</div>
 		<img src="pages/english_img/quotes_onfriendship.png"></img>
 		<img src="pages/english_img/riddles_image.png"></img>
@@ -196,6 +196,8 @@
 <script src='turn.min.js'></script>
 <script  src="script.js"></script>
 <script>
+	document.addEventListener('contextmenu', 
+                        event => event.preventDefault());
 	var x = document.getElementById("myAudio");
 	function add_to_localstorage() {
 		tobeentered = $("#pageFld").val()
