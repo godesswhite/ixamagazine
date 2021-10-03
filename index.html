@@ -135,10 +135,13 @@
       if ($(this).val() > max)
       {
           $(this).val(max);
+	  $("#flipbook").turn("page", "56")
       }
       else if ($(this).val() < min)
       {
           $(this).val(min);
+	  $("#flipbook").turn("page", "1")
+	           
       }       
     }); 
 });
