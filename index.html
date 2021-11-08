@@ -9,7 +9,7 @@
 </head>
 <style>
 	html {
-		zoom : 200%;
+		zoom : 160%;
 	}
 	body {
     	background-color: #FFEBCD;
@@ -120,25 +120,21 @@
 <audio id="myAudio">
     <source src="page-flip-01a.mp3" type="audio/mp3">
 </audio>
-<center>
-<hr/> 
-<div style="width:500px;height:21px;border:1px solid #000; border-color:#FFEBCD">
-	<button id="prevBtn"><i class="fa fa-arrow-left"></i></button>
-	<input type="number" size="5" id="pageFld" min=1 max="72"/>
-	<label>of 72</label>
-	
-	<button id="nextBtn"><i class="fa fa-arrow-right"></i></button>
-	<button onclick=alert_not_available()><i class="fa fa-download"></i> Download</button>
-	<button onclick=add_to_localstorage()><i class="fa fa-bookmark"></i> Bookmark Page</button>
-	<button onclick=window.print()><i class="fa fa-print"></i> Print Page</button>
-	</center>
-</div>
+<hr/> Page:
+<input type="number" size="5" id="pageFld" min=1 max="66"/>
+<label>of 66</label>
+<button id="prevBtn">Previous</button>
+<button id="nextBtn">Next</button>
+<br><br>
+<button onclick=alert_not_available()>Download Magazine</button>
+<button onclick=add_to_localstorage()>Bookmark Page</button>
+<button onclick=window.print()>Print Page</button>
+<br><br><br>
 <script src='jquery.min.js'></script>
 <script src='turn.min.js'></script>
 <script  src="script.js"></script>
 <script>
 	var getlocal = localStorage.getItem("firsttimevisited");
-	console.log(getlocal)
 	if (getlocal == "Visited") {
 
 	}
