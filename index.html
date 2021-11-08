@@ -5,6 +5,7 @@
 	<title>Class IX A Magazine</title>
 	<link rel="icon" href="pages/icon-head.png"></link>
 	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
 	html {
@@ -33,6 +34,12 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #5987E3; 
+}
+.btn {
+	background-color: DodgerBlue;
+}
+.btn:hover {
+  background-color: RoyalBlue;
 }
 </style>
 
@@ -87,9 +94,9 @@
 		<img src="pages/photography_img/page0004.png">
 		<img src="pages/photography_img/page0005.png">
 		<img src="pages/photography_img/page00006.png">
-                <img src="pages/photography_img/page0007.png">
+        <img src="pages/photography_img/page0007.png">
 		<img src="pages/science_img/coverpage.jpg">
-		<div class="pg3" style="background-image: url(pages/gradientimage.png)"> <br><br><br><br><center><strong>Magic Trick</strong><br><p><h1 style="font-size:10px">This is a video made by Darshana Harikumar, presenting a magic trick using Science.</h1></p><a href="pages/science_img/science_darshana.mp4" target="_blank">Click here</a><br><br><img src="pages/qrcodes_img/darshana_qrcode.png" height=100px, width=100px></center></div>
+		<div class="pg3" style="background-image: url(pages/gradientimage.png)"><br><br><center><strong>Magic Trick</strong><br><p><h1 style="font-size:10px">This is a video made by Darshana Harikumar, presenting a magic trick using Science.</h1></p><a href="pages/science_img/science_darshana.mp4" target="_blank">Click here</a><br><br><img src="pages/qrcodes_img/darshana_qrcode.png" height=100px, width=100px></center></div>
 		<img src="pages/science_img/page0001.png">
 		<img src="pages/science_img/page0002.png">
 		<img src="pages/science_img/page0003.png">
@@ -107,6 +114,8 @@
 		<div class="pg3" style="background-image: url(pages/gradientimage.png)"> <br><br><center>Onam Video<br><p><h1 style="font-size:10px">Includes singing, dance, paintings, cooking and video editing done by the students of Class IX A. All students have participated in it. To watch the video, </h1></p><a href="pages/OnamVideo.mp4" target="_blank">Click here</a><br><br><img src="pages/qrcodes_img/onamvideo_qrcode.png" height=100px, width=100px></center></div>
 		<img src="pages/base_img/1.png">
 		<img src="pages/base_img/Class Photo (1).png">
+		<img src="pages/base_img/teachers1.png">
+		<img src="pages/base_img/teachers2.png">
 		<img src="pages/base_img/friendship_4.jpg">
 		<img src="pages/base_img/friendship_3.jpg">
 		<img src="pages/base_img/friendship_2.jpg">
@@ -117,16 +126,19 @@
 <audio id="myAudio">
     <source src="page-flip-01a.mp3" type="audio/mp3">
 </audio>
-<hr/> Page:
-<input type="number" size="5" id="pageFld" min=1 max="70"/>
-<label>of 70</label>
-<button id="prevBtn">Previous</button>
-<button id="nextBtn">Next</button>
-<br><br>
-<button onclick=alert_not_available()>Download Magazine</button>
-<button onclick=add_to_localstorage()>Bookmark Page</button>
-<button onclick=window.print()>Print Page</button>
-<br><br><br>
+<center>
+<hr/> 
+<div style="width:500px;height:21px;border:1px solid #000; border-color:#FFEBCD">
+	<button id="prevBtn" class="btn"><i class="fa fa-arrow-left"></i></button>
+	<input type="number" size="5" id="pageFld" min=1 max="72"/>
+	<label>of 72</label>
+	
+	<button id="nextBtn" class="btn"><i class="fa fa-arrow-right"></i></button>
+	<button class="btn" onclick=alert_not_available()><i class="fa fa-download"></i> Download</button>
+	<button class="btn" onclick=add_to_localstorage()><i class="fa fa-bookmark"></i> Bookmark Page</button>
+	<button class="btn" onclick=window.print()><i class="fa fa-print"></i> Print Page</button>
+	</center>
+</div>
 <script src='jquery.min.js'></script>
 <script src='turn.min.js'></script>
 <script  src="script.js"></script>
