@@ -129,13 +129,18 @@
 <button id="prevBtn">Previous</button>
 <button id="nextBtn">Next</button>
 <br><br>
+<button onclick=openInNewTab()>Download Page</button>
 <button onclick=add_to_localstorage()>Bookmark Page</button>
 <button onclick=window.print()>Print Page</button>
-<br><br><br>
 <script src='jquery.min.js'></script>
 <script src='turn.min.js'></script>
 <script  src="script.js"></script>
 <script>
+
+	function openInNewTab() {
+		window.open("pages/Class IX A Magazine.pdf", '_blank').focus();
+	}
+
 	var getlocal = localStorage.getItem("firsttimevisited");
 	if (getlocal == "Visited") {
 
@@ -147,6 +152,7 @@
 	document.addEventListener('contextmenu', 
                         event => event.preventDefault());
 	var x = document.getElementById("myAudio");
+
 	function add_to_localstorage() {
 		tobeentered = $("#pageFld").val()
 		localStorage.setItem("LastReadPage", tobeentered);
